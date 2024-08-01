@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+  title Omi dance academy
+  style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/logo/logo2.jpg") 
+                | ODM
+            li #[a(href='/') Home ]
+            li #[a(href='/') About ]
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info ]
+            li #[a(href='/contact') Contact ]
+    section#introSection
+        div Welcome to Omi's Dance Academy 
+        div.small Eat Sleep Dance Repeat   
+    section#missionSection
+        h2  Our Misssion
+        div.blocks 
+            h3 Dance the way you like 
+            div.cardBox
+                div.cardImg 
+                    img(src="/static/logo/logo1.jpg")
+                div.cardContent 
+                    p This is card content Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        div.blocks 
+            h3 Experince Dance coach 
+            div.cardBox
+                div.cardImg 
+                    img(src="/static/logo/logo4.jpg")
+                div.cardContent 
+                    p This is card content  
+        div.blocks 
+            h3 Dance perfectly
+            div.cardBox
+                div.cardImg 
+                    img(src="/static/logo/logo3.jpg")
+                div.cardContent 
+                    p This is card content       
+    section#sponsorSection
+        h2  Our Sponsors
+        div.boxes
+            div.spBlock 
+                img(src=("/static/bl/1.png"))
+            div.spBlock 
+                img(src=("/static/bl/2.png"))
+            div.spBlock 
+                img(src=("/static/bl/3.png")) 
+            div.spBlock 
+                img(src=("/static/bl/4.png"))            
+    footer#footer 
+        |  Copyright 2019 © omidanceacedemy@org.com | All rights Reserved                
+    script
+      include ../static/index.js
